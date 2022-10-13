@@ -1,0 +1,13 @@
+--- a/test/simple.js
++++ b/test/simple.js
+@@ -6,8 +6,8 @@
+ 	var pathsToIt = [
+ 		[__dirname, "../lib/node", "direct"],
+ 		[__dirname, "../", "as directory"],
+-		[path.join(__dirname, "..", ".."), "./enhanced-resolve", "as module"],
+-		[path.join(__dirname, "..", ".."), "./enhanced-resolve/lib/node", "in module"]
++		// [path.join(__dirname, "..", ".."), "./enhanced-resolve", "as module"],
++		// [path.join(__dirname, "..", ".."), "./enhanced-resolve/lib/node", "in module"]
+ 	];
+ 	pathsToIt.forEach(function(pathToIt) {
+ 		it("should resolve itself " + pathToIt[2], function(done) {

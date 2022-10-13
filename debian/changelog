@@ -1,0 +1,43 @@
+node-enhanced-resolve (4.1.0-4) unstable; urgency=medium
+
+  * Add Testsuite field in control
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 11 Aug 2019 11:20:13 +0530
+
+node-enhanced-resolve (4.1.0-3) unstable; urgency=medium
+
+  * Remove resolve itself tests in autopkgtest
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 06 Aug 2019 07:43:21 +0000
+
+node-enhanced-resolve (4.1.0-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+  * Switch to pkg-js-tools auto install
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 04 Aug 2019 09:32:08 +0000
+
+node-enhanced-resolve (4.1.0-1) experimental; urgency=medium
+
+  * New upstream version 4.1.0
+  * Bump Standards-Version to 4.2.1 (no changes needed)
+  * Bump debhelper compatibility level to 11
+  * Use salsa.debian.org in Vcs-* fields
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 12 Sep 2018 15:51:00 +0530
+
+node-enhanced-resolve (3.4.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 13 Sep 2017 21:47:23 +0530
+
+node-enhanced-resolve (3.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #805908)
+
+  [ Shanavas M ]
+  * Fix/disable failing tests
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 08 May 2017 18:01:33 +0530

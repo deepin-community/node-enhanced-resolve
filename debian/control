@@ -1,0 +1,37 @@
+Source: node-enhanced-resolve
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends:
+ debhelper (>= 11~)
+ , nodejs
+ , pkg-js-tools (>= 0.8.6~)
+ , node-should
+ , mocha
+ , node-graceful-fs (>= 4.1.2~)
+ , node-memory-fs (>= 0.4~)
+ , node-tapable (>= 1.0~)
+Standards-Version: 4.4.0
+Homepage: http://github.com/webpack/enhanced-resolve
+Vcs-Git: https://salsa.debian.org/js-team/node-enhanced-resolve.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-enhanced-resolve
+Testsuite: autopkgtest-pkg-nodejs
+
+Package: node-enhanced-resolve
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+ , node-graceful-fs (>= 4.1.2~)
+ , node-memory-fs (>= 0.4~)
+ , node-tapable (>= 1.0~)
+Description: Offers a async require.resolve function
+ It's highly configurable.
+ .
+ Features
+  * plugin system
+  * provide a custom filesystem
+  * sync and async node.js filesystems included
+ .
+ Node.js is an event-based server-side JavaScript engine.
