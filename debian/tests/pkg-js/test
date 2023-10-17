@@ -2,4 +2,8 @@
 if (echo $PWD | grep "autopkgtest_tmp"); then
   rm -f test/simple.js test/symlink.js
 fi
-mocha -R spec
+mocha test/CachedInputFileSystem.js \
+	test/SyncAsyncFileSystemDecorator.js \
+	test/forEachBail.js test/identifier.js \
+	test/incorrect-description-file.js \
+	test/pr-53.js

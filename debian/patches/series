@@ -1,2 +1,1 @@
-skip-simple-tests.diff
-fix-failing-tests.diff
+fix-default-search-paths.patch
