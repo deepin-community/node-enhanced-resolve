@@ -4,28 +4,28 @@ Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
 Build-Depends:
- debhelper (>= 11~)
- , nodejs
- , pkg-js-tools (>= 0.8.6~)
- , node-should
- , mocha
- , node-graceful-fs (>= 4.1.2~)
- , node-memory-fs (>= 0.4~)
- , node-tapable (>= 1.0~)
-Standards-Version: 4.4.0
-Homepage: http://github.com/webpack/enhanced-resolve
+ debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , jest <!nocheck>
+ , node-graceful-fs <!nocheck>
+ , node-memory-fs <!nocheck>
+ , node-should <!nocheck>
+ , node-tapable <!nocheck>
+Standards-Version: 4.6.2
+Homepage: https://github.com/webpack/enhanced-resolve
 Vcs-Git: https://salsa.debian.org/js-team/node-enhanced-resolve.git
 Vcs-Browser: https://salsa.debian.org/js-team/node-enhanced-resolve
 Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-enhanced-resolve
 Architecture: all
 Depends:
  ${misc:Depends}
- , nodejs
- , node-graceful-fs (>= 4.1.2~)
- , node-memory-fs (>= 0.4~)
+ , node-graceful-fs
+ , node-memory-fs
  , node-tapable (>= 1.0~)
+Breaks: webpack (<<4.43.0-7~)
 Description: Offers a async require.resolve function
  It's highly configurable.
  .

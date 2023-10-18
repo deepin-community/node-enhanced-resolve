@@ -1,3 +1,79 @@
+node-enhanced-resolve (5.15.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 5.15.0
+  * Migrate to jest and use latest file names in test command
+  * Bump Standards-Version to 4.6.2 (no changes needed)
+
+ -- Ananthu C V <weepingclown@disroot.org>  Thu, 12 Oct 2023 19:56:29 +0530
+
+node-enhanced-resolve (5.10.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * Mark test dependencies with <!nocheck>
+  * New upstream version 5.10.0
+  * Unfuzz patches
+
+ -- Yadd <yadd@debian.org>  Tue, 30 Aug 2022 11:07:35 +0200
+
+node-enhanced-resolve (5.9.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 5.9.2
+
+ -- Israel Galadima <izzygaladima@gmail.com>  Thu, 31 Mar 2022 13:05:08 +0000
+
+node-enhanced-resolve (5.8.3-4) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Thu, 27 Jan 2022 12:11:51 +0100
+
+node-enhanced-resolve (5.8.3-3) experimental; urgency=medium
+
+  * Team upload
+  * Add patch to fallback to nodejs default paths
+
+ -- Yadd <yadd@debian.org>  Mon, 10 Jan 2022 10:40:19 +0100
+
+node-enhanced-resolve (5.8.3-2) unstable; urgency=medium
+
+  * Team upload
+  * Add Breaks webpack <4.43.0-7~
+
+ -- Yadd <yadd@debian.org>  Tue, 28 Dec 2021 11:39:47 +0100
+
+node-enhanced-resolve (5.8.3-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Use secure URI in Homepage field.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+  * Remove constraints unnecessary since buster
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs
+  * Modernize debian/watch
+    * Fix GitHub tags regex
+    * Fix filenamemangle
+  * Update standards version to 4.6.0, no changes needed.
+  * New upstream version 5.8.3
+  * Drop patches
+  * Update test
+
+ -- Yadd <yadd@debian.org>  Thu, 23 Dec 2021 16:02:08 +0100
+
 node-enhanced-resolve (4.1.0-4) unstable; urgency=medium
 
   * Add Testsuite field in control

@@ -1,5 +1,9 @@
 # Remove "should resolve (symlink to) itself" tests in autopkgtest
 if (echo $PWD | grep "autopkgtest_tmp"); then
-  rm -f test/simple.js test/symlink.js
+  rm -f test/simple.test.js test/symlink.test.js
 fi
-mocha -R spec
+jest test/CachedInputFileSystem.test.js \
+	test/SyncAsyncFileSystemDecorator.test.js \
+	test/forEachBail.test.js test/identifier.test.js \
+	test/incorrect-description-file.test.js \
+	test/pr-53.test.js
