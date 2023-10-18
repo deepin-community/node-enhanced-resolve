@@ -1,0 +1,16 @@
+Description: fix default search paths
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-01-10
+
+--- a/lib/ResolverFactory.js
++++ b/lib/ResolverFactory.js
+@@ -228,7 +228,7 @@
+ 				? options.modules
+ 				: options.modules
+ 				? [options.modules]
+-				: ["node_modules"],
++				: ["node_modules", ...process.config.variables.node_relative_path.split(':').map((str) => process.config.variables.node_prefix + '/' + str)],
+ 			item => {
+ 				const type = getType(item);
+ 				return type === PathType.Normal || type === PathType.Relative;
